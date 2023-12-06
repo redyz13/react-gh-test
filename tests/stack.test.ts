@@ -26,7 +26,7 @@ describe('My Stack', () => {
 
   it('Is created empty', () => {
     expect(stack.top).toBe(-1);
-    expect(stack.items).toEqual(['']);
+    expect(stack.items).toEqual([]);
   });
 
   it('Can push to the top', () => {
