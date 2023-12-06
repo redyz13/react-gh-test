@@ -17,5 +17,5 @@
     "jsx": "react-jsx"
   },
   "typeAcquisition": { "include": ["jest"] },
-  "include": ["src", "temp/TempTest.tsx"]
+  "include": ["src", "src/TempTest.tsx"]
 }
