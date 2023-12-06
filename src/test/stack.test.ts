@@ -35,3 +35,5 @@ describe('My Stack', () => {
     expect(stack.peek).toBe('🐈‍⬛');
   });
 });
+
+export {};
