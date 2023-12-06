@@ -32,6 +32,10 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Test
+      - name: Test
+        run: npm run test
+
       # Deploy the react app to github pages
       - name: Deploy 🐈
         uses: JamesIves/github-pages-deploy-action@v4
