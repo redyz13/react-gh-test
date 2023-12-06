@@ -41,4 +41,3 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build # The folder the action should deploy.
-          commit-message: Deploying to gh-pages from @${{ GIT_COMMIT_SHORT_SHA }}🐈‍⬛
