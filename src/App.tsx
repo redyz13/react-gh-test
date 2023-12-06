@@ -3,12 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 
 function App(): JSX.Element {
-  const i = true;
-
-  if (i) {
-    console.log(i);
-  }
-
   return (
     <div className="App">
       <header className="App-header">
