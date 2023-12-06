@@ -9,6 +9,10 @@ jobs:
   deploy-react-to-gh-pages:
     runs-on: ubuntu-latest
 
+    # Give permissions
+    permissions:
+      contents: write
+
     steps:
       # Checkout the repository content to github runner
       - name: Checkout
