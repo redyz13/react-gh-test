@@ -15,25 +15,25 @@ jobs:
 
     steps:
       # Checkout the repository content to github runner
-      - name: Checkout
+      - name: Checkout ✔️
         uses: actions/checkout@v3
 
-      # Setup nodejs environment
-      - name: Setup Node.js environment
+      # Setup Node.js environment
+      - name: Setup Node.js environment 💻
         uses: actions/setup-node@v2.1.5
         with:
           node-version: "20.10.0"
 
       # Install dependencies
-      - name: Install dependencies
+      - name: Install dependencies 🦕
         run: npm i
 
       # Test
-      - name: Test
+      - name: Test 🧪
         run: npm run test
 
       # Build the react app
-      - name: Build
+      - name: Build 🛠️
         run: npm run build
 
       # Deploy the react app to github pages
