@@ -33,7 +33,7 @@ jobs:
         run: npm run build
 
       # Deploy the react app to github pages
-      - name: Deploy
+      - name: Deploy 🐈
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build # The folder the action should deploy.
