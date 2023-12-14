@@ -1,5 +1,5 @@
-import * as express from 'express';
-import { PersonDAO } from './main/model/PersonDAO';
+import express from 'express';
+import { PersonDAO } from './model/PersonDAO';
 
 const app = express();
 const port = 3001;

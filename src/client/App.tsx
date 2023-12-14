@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
-import { Person } from './model/Person';
+import { Person } from '../server/model/Person';
 
 function App(): JSX.Element {
   const [persons, setPersons] = useState<Person[]>([]);

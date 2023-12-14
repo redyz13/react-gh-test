@@ -9,21 +9,6 @@ export class PersonDAO {
     this.pool = Database.getInstance();
   }
 
-  printUsers(): void {
-    this.pool.connect((err, client) => {
-      if (err) throw err;
-      client?.query('SELECT * FROM PERSON', (err, res) => {
-        if (err) {
-          console.log(err.stack);
-        } else {
-          console.log(res.rows);
-        }
-        client.release();
-        this.pool.end();
-      });
-    });
-  }
-
   getUsers(): Promise<Person[]> {
     return new Promise((resolve, reject) => {
       this.pool.connect((err, client) => {
