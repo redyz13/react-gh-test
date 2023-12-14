@@ -1,4 +1,6 @@
 **/build
+.env
+*.js
 node_modules
 coverage
 package-lock.json

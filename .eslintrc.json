@@ -32,6 +32,12 @@
         "allowExpressions": true
       }
     ],
+    "@typescript-eslint/no-empty-function": [
+      "error",
+      {
+        "allow": ["constructors"]
+      }
+    ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
   },
