@@ -8,12 +8,13 @@ function App(): JSX.Element {
   const [persons, setPersons] = useState<Person[]>([]);
 
   useEffect(() => {
-    // Chiamata al tuo server Node.js per ottenere la lista di persone
-    fetch('http://localhost:3001/users') // Assumi che il tuo server esponga un endpoint /users
+    fetch('http://localhost:3001/users')
       .then((response) => response.json())
       .then((data) => setPersons(data))
       .catch((error) => console.error('Error fetching data:', error));
-  }, []); // La dipendenza vuota fa sì che l'effetto venga eseguito solo una volta, all'avvio del componente
+  }, []);
+  // La dipendenza vuota fa sì che l'effetto venga eseguito
+  // solo una volta, all'avvio del componente
 
   return (
     <div className="App">
