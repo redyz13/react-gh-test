@@ -13,6 +13,7 @@
     "@types/pg": "^8.10.9",
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "pg": "^8.11.3",
     "react": "^18.2.0",
@@ -52,6 +53,7 @@
     "@capacitor/cli": "^5.5.1",
     "@capacitor/core": "^5.5.1",
     "gh-pages": "^6.1.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "ts-node": "^10.9.2"
   }
 }
