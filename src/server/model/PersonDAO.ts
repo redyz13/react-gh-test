@@ -23,7 +23,7 @@ export class PersonDAO {
             reject(err);
           } else {
             client.release();
-            this.pool.end();
+            // this.pool.end();
             resolve(res.rows as Person[]);
           }
         });
