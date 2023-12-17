@@ -8,7 +8,7 @@ function App(): JSX.Element {
   const [persons, setPersons] = useState<Person[]>([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/users')
+    fetch('https://localhost:3001/users')
       .then((response) => response.json())
       .then((data) => setPersons(data))
       .catch((error) => console.error('Error fetching data:', error));
