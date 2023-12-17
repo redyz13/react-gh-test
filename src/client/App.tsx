@@ -7,8 +7,10 @@ import { Person } from '../server/model/Person';
 function App(): JSX.Element {
   const [persons, setPersons] = useState<Person[]>([]);
 
+  const remoteServerUrl = 'https://18.159.60.217:3001/users';
+
   useEffect(() => {
-    fetch('https://localhost:3001/users')
+    fetch(remoteServerUrl)
       .then((response) => response.json())
       .then((data) => setPersons(data))
       .catch((error) => console.error('Error fetching data:', error));

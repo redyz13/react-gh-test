@@ -12,7 +12,12 @@ const app = express();
 const personDAO = new PersonDAO();
 
 // CORS config
-app.use(cors());
+const corsOptions = {
+  origin: 'http://localhost:3000',
+  methods: 'GET, POST',
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
 
 app.get('/users', async (req, res) => {
   try {
