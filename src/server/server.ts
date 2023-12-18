@@ -12,8 +12,19 @@ const app = express();
 const personDAO = new PersonDAO();
 
 // CORS config
+// TODO remove localhost from allowedOrigins before production
+const allowedOrigins = ['https://redyz13.github.io', 'http://localhost:3000'];
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: (
+    origin: string | undefined,
+    callback: (error: Error | null, allow?: boolean) => void
+  ) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   methods: 'GET, POST',
   optionsSuccessStatus: 200,
 };
