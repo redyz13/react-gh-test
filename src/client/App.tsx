@@ -7,7 +7,7 @@ import { Person } from '../server/model/Person';
 function App(): JSX.Element {
   const [persons, setPersons] = useState<Person[]>([]);
 
-  const remoteServerUrl = `${process.env.REACT_APP_WEBSERVER}/users`;
+  const remoteServerUrl = 'https://18.159.60.217:3001/users';
 
   useEffect(() => {
     fetch(remoteServerUrl)
