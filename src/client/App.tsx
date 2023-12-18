@@ -14,7 +14,7 @@ function App(): JSX.Element {
       .then((response) => response.json())
       .then((data) => setPersons(data))
       .catch((error) => console.error('Error fetching data:', error));
-  }, []);
+  }, [remoteServerUrl]);
 
   return (
     <div className="App">
