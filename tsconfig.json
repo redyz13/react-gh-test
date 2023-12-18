@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2016",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -17,5 +17,5 @@
     "jsx": "react-jsx"
   },
   "typeAcquisition": { "include": ["jest"] },
-  "include": ["src"]
+  "include": ["src/client", "src/test"]
 }
