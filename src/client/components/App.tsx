@@ -1,21 +1,25 @@
 import React from 'react';
-import logo from './assets/logo.svg';
-import './css/App.css';
+import logo from '../assets/logo.svg';
+import '../css/App.css';
 import { useState, useEffect } from 'react';
-import { Person } from '../server/model/Person';
-import { WEBSERVER } from './config';
+import { PersonFacade, Person } from '../../shared/facade/PersonFacade';
 
 function App(): JSX.Element {
   const [persons, setPersons] = useState<Person[]>([]);
+  const fetchData = async (): Promise<void> => {
+    const personFacade = new PersonFacade();
 
-  const remoteServerUrl = `${WEBSERVER}/users`;
+    try {
+      const data = await personFacade.fetchUsers();
+      setPersons(data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
 
   useEffect(() => {
-    fetch(remoteServerUrl)
-      .then((response) => response.json())
-      .then((data) => setPersons(data))
-      .catch((error) => console.error('Error fetching data:', error));
-  }, [remoteServerUrl]);
+    fetchData();
+  }, []);
 
   return (
     <div className="App">
