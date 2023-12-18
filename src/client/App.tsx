@@ -1,13 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/logo.svg';
+import './css/App.css';
 import { useState, useEffect } from 'react';
 import { Person } from '../server/model/Person';
+import { WEBSERVER } from './config';
 
 function App(): JSX.Element {
   const [persons, setPersons] = useState<Person[]>([]);
 
-  const remoteServerUrl = `${process.env.REACT_APP_WEBSERVER}/users`;
+  const remoteServerUrl = `${WEBSERVER}/users`;
 
   useEffect(() => {
     fetch(remoteServerUrl)
