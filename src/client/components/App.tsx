@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../assets/logo.svg';
 import '../css/App.css';
 import { useState, useEffect } from 'react';
-import { PersonFacade, Person } from '../../shared/facade/PersonFacade';
+import { PersonFacade, Person } from 'shared/facade/PersonFacade';
 
 function App(): JSX.Element {
   const [persons, setPersons] = useState<Person[]>([]);

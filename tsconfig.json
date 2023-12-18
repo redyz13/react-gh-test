@@ -14,7 +14,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "src"
   },
   "typeAcquisition": { "include": ["jest"] },
   "include": ["src/client", "src/test", "src/shared"]
