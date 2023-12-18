@@ -2,7 +2,7 @@ import express from 'express';
 import https from 'https';
 import fs from 'fs';
 import cors from 'cors';
-import { PersonDAO } from 'model/PersonDAO';
+import { PersonDAO } from './model/PersonDAO';
 
 const key = fs.readFileSync('./key.pem');
 const cert = fs.readFileSync('./cert.pem');
