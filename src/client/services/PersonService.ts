@@ -1,7 +1,7 @@
-import { Person } from 'server/entity/Person';
+import { Person } from 'client/interfaces/PersonInterface';
 import { WEBSERVER } from '../config';
 
-class PersonFacade {
+class PersonService {
   private baseUrl: string;
 
   constructor() {
@@ -28,4 +28,4 @@ class PersonFacade {
   }
 }
 
-export { PersonFacade, Person };
+export default PersonService;

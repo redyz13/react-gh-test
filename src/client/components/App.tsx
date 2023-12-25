@@ -2,15 +2,16 @@ import React from 'react';
 import logo from '../assets/logo.svg';
 import '../css/App.css';
 import { useState, useEffect } from 'react';
-import { PersonFacade, Person } from 'shared/facade/PersonFacade';
+import PersonService from 'client/services/PersonService';
+import { Person } from 'client/interfaces/PersonInterface';
 
 function App(): JSX.Element {
   const [persons, setPersons] = useState<Person[]>([]);
   const fetchData = async (): Promise<void> => {
-    const personFacade = new PersonFacade();
+    const personService = new PersonService();
 
     try {
-      const data = await personFacade.fetchUsers();
+      const data = await personService.fetchUsers();
       setPersons(data);
     } catch (error) {
       console.error('Error fetching data:', error);
