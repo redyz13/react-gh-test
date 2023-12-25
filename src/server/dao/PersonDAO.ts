@@ -1,6 +1,6 @@
 import { Database } from '../Database';
 import { Pool } from 'pg';
-import { Person } from './Person';
+import { Person } from '../entity/Person';
 
 export class PersonDAO {
   pool: Pool;
@@ -23,7 +23,6 @@ export class PersonDAO {
             reject(err);
           } else {
             client.release();
-            // this.pool.end();
             resolve(res.rows as Person[]);
           }
         });

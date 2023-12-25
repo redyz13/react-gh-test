@@ -1,4 +1,4 @@
-import { Stack } from '../server/model/Stack';
+import { Stack } from '../server/entity/Stack';
 
 describe('My Stack', () => {
   let stack: Stack;

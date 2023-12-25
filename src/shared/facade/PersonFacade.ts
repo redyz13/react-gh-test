@@ -1,4 +1,4 @@
-import { Person } from 'server/model/Person';
+import { Person } from 'server/entity/Person';
 import { WEBSERVER } from '../config';
 
 class PersonFacade {
