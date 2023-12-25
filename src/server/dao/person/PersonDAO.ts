@@ -1,8 +1,9 @@
-import { Database } from '../Database';
+import { Database } from '../../Database';
 import { Pool } from 'pg';
-import { Person } from '../entity/Person';
+import { Person } from '../../entity/Person';
+import { PersonDAOInterface } from './PersonDAOInterface';
 
-export class PersonDAO {
+export class PersonDAO implements PersonDAOInterface {
   pool: Pool;
 
   constructor() {
