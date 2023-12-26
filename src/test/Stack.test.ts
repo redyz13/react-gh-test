@@ -8,13 +8,13 @@ describe('My Stack', () => {
   });
 
   it('Is created empty', () => {
-    expect(stack.top).toBe(-1);
-    expect(stack.items).toEqual([]);
+    expect(stack.getTop).toBe(-1);
+    expect(stack.getItems).toEqual([]);
   });
 
   it('Can push to the top', () => {
     stack.push('🐈‍⬛');
-    expect(stack.top).toBe(0);
+    expect(stack.getTop).toBe(0);
     expect(stack.peek).toBe('🐈‍⬛');
   });
 });
