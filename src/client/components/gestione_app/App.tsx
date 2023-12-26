@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from '../assets/logo.svg';
-import '../css/App.css';
+import logo from 'client/assets/logo.svg';
+import 'client/css/gestione_app/App.css';
 import { useState, useEffect } from 'react';
-import PersonService from 'client/services/PersonService';
-import { Person } from 'client/interfaces/PersonInterface';
+import PersonService from 'client/services/gestione_utenti/PersonService';
+import { Person } from 'client/interfaces/gestione_utenti/PersonInterface';
 
 function App(): JSX.Element {
   const [persons, setPersons] = useState<Person[]>([]);

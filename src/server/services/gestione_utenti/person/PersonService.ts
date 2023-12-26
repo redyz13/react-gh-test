@@ -1,7 +1,7 @@
+import { Person } from 'server/entity/gestione_utenti/Person';
+import { PersonDAO } from 'server/dao/gestione_utenti/person/PersonDAO';
+import { PersonDAOInterface } from 'server/dao/gestione_utenti/person/PersonDAOInterface';
 import { PersonServiceInterface } from './PersonServiceInterface';
-import { Person } from 'server/entity/Person';
-import { PersonDAOInterface } from 'server/dao/person/PersonDAOInterface';
-import { PersonDAO } from 'server/dao/person/PersonDAO';
 
 export class PersonService implements PersonServiceInterface {
   personDAO: PersonDAOInterface;

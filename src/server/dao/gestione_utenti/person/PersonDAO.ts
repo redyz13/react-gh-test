@@ -1,6 +1,6 @@
-import { Database } from '../../Database';
+import { Database } from '../../../Database';
 import { Pool } from 'pg';
-import { Person } from '../../entity/Person';
+import { Person } from '../../../entity/gestione_utenti/Person';
 import { PersonDAOInterface } from './PersonDAOInterface';
 
 export class PersonDAO implements PersonDAOInterface {

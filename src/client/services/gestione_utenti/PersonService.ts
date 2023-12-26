@@ -1,5 +1,5 @@
-import { Person } from 'client/interfaces/PersonInterface';
-import { WEBSERVER } from '../config';
+import { Person } from 'client/interfaces/gestione_utenti/PersonInterface';
+import { WEBSERVER } from '../../config';
 
 class PersonService {
   private baseUrl: string;

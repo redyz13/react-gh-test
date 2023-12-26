@@ -2,7 +2,7 @@ import cors from 'cors';
 import express from 'express';
 import fs from 'fs';
 import https from 'https';
-import personRoutes from './routes/personRoutes';
+import personRoutes from './routes/gestione_utenti/personRoutes';
 
 const key = fs.readFileSync('./key.pem');
 const cert = fs.readFileSync('./cert.pem');

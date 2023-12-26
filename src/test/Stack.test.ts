@@ -1,4 +1,4 @@
-import { Stack } from '../server/entity/Stack';
+import { Stack } from 'server/entity/gestione_stack/Stack';
 
 describe('My Stack', () => {
   let stack: Stack;

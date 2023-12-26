@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
-import { PersonServiceInterface } from 'server/services/PersonServiceInterface';
-import { PersonService } from 'server/services/PersonService';
+import { PersonServiceInterface } from 'server/services/gestione_utenti/person/PersonServiceInterface';
+import { PersonService } from 'server/services/gestione_utenti/person/PersonService';
 
 const router = express.Router();
 const personService: PersonServiceInterface = new PersonService();
