@@ -52,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@capacitor/android": "^5.5.1",
     "@capacitor/cli": "^5.5.1",
     "@capacitor/core": "^5.5.1",
