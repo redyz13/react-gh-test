@@ -28,7 +28,7 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-// User routes
+// Person routes
 app.use(personRoutes);
 
 const port = 3001;
